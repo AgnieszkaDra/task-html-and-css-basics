@@ -2,8 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 
 import App from './App'
+import Header from './components/Header/Header';
 
 ReactDOM.render(<App/>, document.querySelector('#root'));
+ReactDOM.render(<Header/>, document.querySelector('.nav'));
+ReactDOM.render(<App/>, document.querySelector('.pricing'));
 const element = document.querySelector('.pricingplan')
 console.log(element)
 // function App() {
