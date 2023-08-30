@@ -4,20 +4,22 @@ html, body{
     font-family: 'Montserrat', sans-serif;
     color: white;
     box-sizing: border-box;
+    
 }
 
-.container {
+/* .container {
     max-width: 1150px;
     margin: 0 auto;
-}
+} */
 
 /*HEADER*/
 
-header{
+/* header{
     background: radial-gradient(rgb(194, 74, 126), rgb(105, 86, 235));
     width: 100%;
+    overflow-x: hidden;
     
-}
+} */
 
 .nav {
     padding: 1rem;

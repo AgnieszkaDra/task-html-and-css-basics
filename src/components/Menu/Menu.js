@@ -21,26 +21,23 @@ export const Menu = (props) => {
   // const context = React.useContext(NavbarContext);
 
   return (
-    <>
+    <nav className={'nav'}>
      
       {/* <button onClick={handleToggle} className={classes.hamburger__btn}><GiHamburgerMenu/></button>     */}
-        <ul className={`${classes.nav__menu} ${open ? '' : `${classes.nav__hide}`}`}>
-        <a className={'link'} href={'./#home'}>
-                        <li className={classes.item}><img src={logo}></img></li>
-                    </a>
-                    <a className={'link'} href={'./#home'}>
-                      <li className={classes.item4}><a href="/" className={classes.link}>The team</a></li>
-                    </a>    
-                    <a className={'link'} href={'./#home'}>
-                        <li className={classes.item4}><a href="/" className={classes.link}>Pricing</a></li>
-                    </a>    
+        <ul className={`${'nav__menu'} ${open ? `${'nav__block'}` : `${'nav__hide'}`}`}>
+       
+                 
+                      <li><a href="/" className={'nav__item'}>The team</a></li>
+                 
+                        <li><a href="/" className={'nav__item'}>Pricing</a></li>
+                 
            
-                    <a className={'link'} href={'./#home'}>
-                      <li className={classes.item4}><a href="/" className={classes.link}>Features</a></li>
-                    </a> 
+              
+                      <li><a href="/" className={'nav__item'}>Features</a></li>
+              
            
         </ul>
-    </>
+    </nav>
   )
 }
 

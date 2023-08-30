@@ -1,0 +1,54 @@
+.container, .main {
+  max-width: 1150px;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1150px;
+  padding: 10px 0;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  border: 5px solid yellow;
+}
+
+@media (max-width: 500px) {
+  .container, .main {
+    max-width: 450px;
+  }
+}
+@media (min-width: 501px) {
+  .container, .main {
+    max-width: 700px;
+  }
+}
+@media (min-width: 768px) {
+  .container, .main {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container, .main {
+    max-width: 960px;
+    padding-left: 0;
+  }
+}
+.column {
+  flex-direction: column;
+}
+
+header {
+  background: radial-gradient(rgb(194, 74, 126), rgb(134, 82, 200));
+  width: 100%;
+  border: 10px solid black;
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    height: 75vh;
+  }
+}
+.nav {
+  padding: 1rem;
+  background-color: pink;
+}
+
+/*# sourceMappingURL=main.css.map */
