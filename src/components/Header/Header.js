@@ -41,13 +41,8 @@ export const Header = (props) => {
           </div>
           <NavbarContext.Provider value={{ navbarOpen, setNavbarOpen }}>
             <button onClick={handleToggle} className={'hamburger'}> 
-
-    <ChocolateHamburger open={navbarOpen} openFunc={setNavbarOpen}/>
-
-             
-         
-           
-     </button>
+            <ChocolateHamburger open={navbarOpen} openFunc={setNavbarOpen}/>
+          </button>
          
             <Menu open={navbarOpen} openFunc={setNavbarOpen}></Menu>
           </NavbarContext.Provider>

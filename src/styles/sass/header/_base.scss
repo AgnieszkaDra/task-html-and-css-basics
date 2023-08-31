@@ -1,15 +1,13 @@
 @import '../abstracts/';
 
 header{
-    background: radial-gradient($color-dark-pink, $color-dark-violet);
     width: 100%;
-    border: 10px solid black;
-    height: 20vh;
+    height: 100vh;
+    background: radial-gradient($color-dark-pink, $color-dark-violet);
+    border: 2px solid pink;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
-
 }
 
 @media screen and (min-width: 1200px) {

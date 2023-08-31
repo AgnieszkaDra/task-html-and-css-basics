@@ -39,7 +39,6 @@ header {
   width: 100%;
   height: 100vh;
   background: radial-gradient(rgb(194, 74, 126), rgb(134, 82, 200));
-  border: 2px solid pink;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -220,5 +219,12 @@ nav {
     display: block;
   }
 }
+.h1Style {
+  color: rgb(0, 0, 0);
+}
 
-/*# sourceMappingURL=main.css.map */
+.link {
+  color: red;
+}
+
+/*# sourceMappingURL=App.css.map */
