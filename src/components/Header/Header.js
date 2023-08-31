@@ -20,7 +20,7 @@ export const Header = (props) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [ChocolateHamburgerOpen, setChocolateHamburgerOpen] = useState(false)
 
-   const handleToggle = () => {
+  const handleToggle = () => {
     setNavbarOpen(!navbarOpen);
   }
 
@@ -29,27 +29,22 @@ export const Header = (props) => {
   }
 
   return (
-    <div
-      className={'header__container container'}
-    >
-        <div className={'logo-container'}>
-            <img
-              src={logo}
-              alt="logo"
-            >
-            </img>
-          </div>
-          <NavbarContext.Provider value={{ navbarOpen, setNavbarOpen }}>
-            <button onClick={handleToggle} className={'hamburger'}> 
-            <ChocolateHamburger open={navbarOpen} openFunc={setNavbarOpen}/>
-          </button>
-         
-            <Menu open={navbarOpen} openFunc={setNavbarOpen}></Menu>
-          </NavbarContext.Provider>
-        </div>
-
-      
-  )
+    <>
+       <h1 className={'header__logo'}>
+        <img
+          src={logo}
+          alt="logo"
+        >
+        </img>
+      </h1>
+      <NavbarContext.Provider value={{ navbarOpen, setNavbarOpen }}>
+        <button onClick={handleToggle} className={'hamburger'}>
+          <ChocolateHamburger open={navbarOpen} openFunc={setNavbarOpen} />
+        </button>
+        <Menu open={navbarOpen} openFunc={setNavbarOpen}></Menu>
+      </NavbarContext.Provider>
+    </>
+)
 }
 
 Header.propTypes = {

@@ -5,7 +5,7 @@ import App from './App'
 import Header from './components/Header/Header';
 
 
-ReactDOM.render(<Header/>, document.querySelector('header'));
+ReactDOM.render(<Header/>, document.querySelector('.header__container'));
 ReactDOM.render(<App/>, document.querySelector('.pricing'));
 
 

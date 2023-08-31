@@ -1,0 +1,80 @@
+@import '../abstracts/';
+
+.hero {
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: $color-white;
+    padding: 40px 0px;
+
+    .hero__info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1.5em;
+        padding: 20px 120px;
+
+        &>* {
+            margin-bottom: 30px;
+        }
+
+        .hero__header {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .hero__sub-header {
+            font-weight: 400;
+            font-size: 1em;
+        }
+
+        .hero__button {
+            width: 30%;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 0.7em;
+        }
+
+        .hero__photo-container {
+       
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 50%;
+            height: 400px;
+            background-color: $color-white;
+            transform: rotate(-10deg);
+            border-radius: 5px;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+.hero__photo {
+    flex-basis: 90%;
+    height: 90%;
+    // background-image: url('../../../../images/screen.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.hero__button {
+    font-size: 2rem;
+    background-color: $color-medium-green;
+    color: $color-white;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}

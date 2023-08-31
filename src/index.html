@@ -7,14 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="../src/styles/reset/reset.css">
     <!-- <link rel="stylesheet" href="CSS/style.css"> -->
-    <link rel="stylesheet" href="/src/styles/App.css">
+    <link rel="stylesheet" href="/src/styles/sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="nav container"></nav>
+        <div class="header__container container"></div>
         <!-- <nav>
             <div class="container nav">
                 <ul class="nav__links">
@@ -35,12 +35,16 @@
         </nav> -->
         <div class="hero container" id="hero" >
             <div class="hero__info">
-                <h1 class="hero__header">Beautiful Free Nova template</h1>
+                <h2 class="hero__header">Beautiful Free Nova template</h2>
                 <p class="hero__sub-header">A top notch premium quality template for your next web project</p>
                 <button class="hero__button">Download FREE!</button>
             </div>
             <div class="hero__photo-container"> 
-                <div class="hero__photo"></div>
+                <img class="image" 
+                    src="../images/screen.png"
+                    alt="screen"
+                    width="350px">
+                
             </div>
         </div>
     </header>

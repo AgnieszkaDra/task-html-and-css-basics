@@ -21,7 +21,7 @@ export const ChocolateHamburger = (props) => {
   }
 if(open) {
 return (
-  <div className={`${"icon nav-icon-1 open"}`}>
+  <div className={`${"hamburger__icon"}`}>
     <span></span>
     <span></span>
     <span></span>
