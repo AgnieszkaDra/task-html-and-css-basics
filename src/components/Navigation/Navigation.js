@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 
-import classes from './styles.module.css'
-import logo from './assets/logo.svg'
+
+
 import { ChocolateHamburger } from '../ChocolateHamburger'
 import Menu from '../Menu'
 
@@ -11,7 +11,7 @@ import Menu from '../Menu'
 export const NavbarContext = React.createContext();
 export const ChocolateHamburgerContext = React.createContext()
 
-export const Header = (props) => {
+export const Navigation = (props) => {
   const {
     className,
     ...otherProps
@@ -30,13 +30,13 @@ export const Header = (props) => {
 
   return (
     <>
-       <h1 className={'header__logo'}>
+       {/* <h1 className={'header__logo'}>
         <img
           src={logo}
           alt="logo"
         >
         </img>
-      </h1>
+      </h1> */}
       <NavbarContext.Provider value={{ navbarOpen, setNavbarOpen }}>
         <button onClick={handleToggle} className={'hamburger'}>
           <ChocolateHamburger open={navbarOpen} openFunc={setNavbarOpen} />
@@ -47,8 +47,8 @@ export const Header = (props) => {
 )
 }
 
-Header.propTypes = {
+Navigation.propTypes = {
   className: PropTypes.string
 }
 
-export default Header
+export default Navigation
