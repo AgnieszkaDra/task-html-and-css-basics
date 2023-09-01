@@ -1,0 +1,16 @@
+.websites__container {
+    padding: 20px 0;
+    animation: 3s linear 1s infinite;
+    animation-name: run;
+    animation-duration: 12s;
+  }
+ 
+  @keyframes run {
+    from {
+        transform: translateX(-100%);
+      }
+    
+      to {
+        transform: translateX(100%);
+      }
+  }

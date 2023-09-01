@@ -2,6 +2,7 @@
 
 .hero {
     height: 70%;
+    @include flexAbsoluteCenter;
 
     .hero__info {
         display: flex;
@@ -40,7 +41,7 @@
     }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 768px) {
     .hero {
         height: 80%;
         display: flex;
