@@ -30,34 +30,30 @@ header {
       }
 
       .nav__menu.nav__block {
-        display: block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         height: 40vh;
         width: 100%;
         position: absolute;
         top: 60vh;
         left: 0;
         z-index: 2;
+        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 40%;
         background: radial-gradient(circle, $color-dark-pink 40%, $color-dark-violet 100%);
 
-        li {
-
+        &>li {
+          margin-bottom: 10px;
 
           a {
-            color: $color-white;
-            text-decoration: none;
+            color: $color-medium-green;
+            font-weight: bold;
           }
         }
       }
-
     }
   }
-
-
-
 }
 
 
@@ -89,84 +85,12 @@ header {
       }
     }
   }
-
 }
-
-
-
 
 @media(min-width:1200px) {
-  .header__container {
-
-
-
-
-
-    .nav__menu {
-      flex-direction: row;
-      align-items: center;
-
-
-
-    }
-  }
-}
-
-
-
-
-@media only screen and (max-width: 768px) {
-
-  .hamburger {
-    position: absolute;
-    right: 20px;
-  }
-
-  .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    // .nav__menu {
-    //   height: 80vh;
-    //   position: absolute;
-    //   top: 20vh;
-    //   width: 100%;
-    //   left: 0;
-    //   z-index: 2;
-    //   flex-direction: column;
-    //   justify-content: center;
-    //   align-items: center;
-    //   background-color: $color-dark-pink
-    // }
-  }
-
-  .nav__hide {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 768px) {
   .hamburger {
     display: none;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // border: none;
-    // font-size: 30px;
-    // position: absolute;
-    // right: 0;
   }
-
-  .hamburger {
-    // display: none;
-    background-color: rgb(249, 217, 213);
-    border: none;
-    font-size: 30px;
-    margin-left: auto;
-    margin-right: 10px;
-  }
-
-
 
 }
+
