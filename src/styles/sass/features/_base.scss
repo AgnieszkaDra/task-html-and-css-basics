@@ -1,0 +1,62 @@
+@import '../abstracts/';
+
+.features {
+    width: 100%;
+    background-color: $color-black;
+    color: $color-white;
+
+    .features__header {
+        text-align: center;
+        font-size: 1em;
+        padding: 20px 0 20px 0;
+    }
+
+    .features__container {
+        @include flexAbsoluteCenter;
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: repeat(3, 250px);
+        grid-auto-flow: row;
+
+        .feature {
+            @include flexAbsoluteCenter;
+            flex-direction: column;
+            padding: 0 50px;
+
+            &>* {
+                margin-bottom: 20px;
+            }
+
+            .feature__image {
+                width: 40px;
+                height: 40px;
+                padding: 10px;
+                border-radius: 50%;
+                background-color: $color-white;
+            }
+
+            .feature__description {
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .feature__text {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .features {
+        .features__header {
+          padding: 20px 0 50px 0;  
+        }
+        .features__container {
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            grid-template-rows: 80%;
+            grid-auto-flow: row;
+        }
+    }
+}
