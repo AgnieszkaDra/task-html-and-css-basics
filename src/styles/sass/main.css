@@ -294,7 +294,7 @@ header .header__container .navigation .nav__menu.nav__block > li a {
     width: 50%;
   }
   .hero .hero__info {
-    padding: 20px 100px;
+    padding: 20px 100px 20px 0;
   }
   .hero .hero__photo-container {
     width: 40%;
@@ -368,6 +368,7 @@ header .header__container .navigation .nav__menu.nav__block > li a {
     padding: 20px 0 50px 0;
   }
   .features .features__container {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 350px);
     grid-template-rows: 80%;
@@ -394,17 +395,18 @@ header .header__container .navigation .nav__menu.nav__block > li a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: rgb(183, 182, 181);
   padding: 0 60px;
 }
 
 .adverb .adverb__text .adverb__text-header {
   font-weight: bold;
   padding: 10px 0;
+  color: rgb(70, 70, 70);
 }
 
 .adverb .adverb__text .adverb__text-description {
   padding: 10px 0;
+  color: rgb(183, 182, 181);
 }
 
 @media (min-width: 768px) {
@@ -425,6 +427,112 @@ header .header__container .navigation .nav__menu.nav__block > li a {
     align-self: flex-start;
     padding: 40px 60px;
   }
+}
+.pricing__header {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 150;
+  padding: 23px 0 20px;
+  color: rgb(70, 70, 70);
+}
+
+.pricing__description {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 200;
+  line-height: 1.5em;
+  color: rgb(70, 70, 70);
+}
+
+.pricing__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: repeat(3, 250px);
+  grid-auto-flow: row;
+}
+
+.pricing__container .pricing__element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.pricing__container .pricing__element .type {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.pricing__container .pricing__element .price {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.pricing__container .pricing__element .sub-price {
+  font-size: 0.8em;
+}
+
+.pricing__container .pricing__element .feature__description {
+  font-weight: bold;
+  text-align: center;
+}
+
+.pricing__container .pricing__element .feature__text {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .pricing__container {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: 80%;
+    grid-auto-flow: row;
+  }
+}
+.pricingplans__container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  color: grey;
+  padding: 20px;
+  min-height: 400px;
+}
+
+.pricingplan {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.pricingplan__type {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.pricingplan__price {
+  font-size: 2rem;
+  color: black;
+}
+
+.pricingplan__info {
+  list-style-type: none;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.pricingplan__info li:nth-child(1) {
+  font-size: 0.8rem;
+  padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

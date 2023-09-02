@@ -9,6 +9,8 @@ export const Features = (props) => {
     ...otherProps
   } = props
 
+ 
+
   const renderListItem = (item, i) => {
 
     return (
@@ -17,6 +19,7 @@ export const Features = (props) => {
           <img className={'feature__image'} src={`${item.image}`} alt="responsive"></img>
           <div className={'feature__description'}>{item.title}</div>
           <div className={'feature__text'}>{item.text}</div>
+          
         </div>
       </>
     )

@@ -3,17 +3,18 @@
 .adverb {
     @include flexAbsoluteCenter;
     flex-direction: column;
-    color: $color-light-grey;
     padding: 0 60px;
 
     .adverb__text {
         .adverb__text-header {
             font-weight: bold;
             padding: 10px 0;
+            color: $color-dark-grey;
         }
 
         .adverb__text-description {
             padding: 10px 0;
+            color: $color-light-grey;
         }
     }
 }
