@@ -1,6 +1,12 @@
-const icons = document.querySelectorAll('.hamburger__icon');
-export const toggleHamburger = icons.forEach (icon => {  
+console.log('icons')
+
+
+export const toggleHamburger = (el) => {
+  el.forEach (icon => {  
+
   icon.addEventListener('click', (event) => {
     icon.classList.toggle("open");
   });
-});
+})};
+
+export default toggleHamburger

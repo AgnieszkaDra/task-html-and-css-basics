@@ -53,7 +53,7 @@ export const Team = (props) => {
 
     
     <>
-    {'djsdj'}
+   
     {team.list.map((item, i) => {
       return renderListItem(item, i)
     })}

@@ -1,10 +1,10 @@
 @import '../abstracts/';
 
 .pricing__header {
-        text-align: center;
-        font-size: 1.5em;
-    font-weight: 150;
-    padding: 23px 0 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
       
      
         color: $color-dark-grey
@@ -62,6 +62,17 @@
         }
     }
     @media(min-width: 768px) {
+        .pricing__header {
+      
+            font-size: 1.5em;
+           
+            }
+            .pricing__description {
+      
+                font-size: 1.3em;
+                padding: 50px 0;
+               
+                }
         
             .pricing__container {
                 display: grid;

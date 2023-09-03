@@ -320,7 +320,8 @@ header .header__container .navigation .nav__menu.nav__block > li a {
 
 .features .features__header {
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
   padding: 20px 0 20px 0;
 }
 
@@ -365,6 +366,7 @@ header .header__container .navigation .nav__menu.nav__block > li a {
 
 @media (min-width: 768px) {
   .features .features__header {
+    font-size: 1.5em;
     padding: 20px 0 50px 0;
   }
   .features .features__container {
@@ -430,9 +432,9 @@ header .header__container .navigation .nav__menu.nav__block > li a {
 }
 .pricing__header {
   text-align: center;
-  font-size: 1.5em;
-  font-weight: 150;
-  padding: 23px 0 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 20px 0 20px 0;
   color: rgb(70, 70, 70);
 }
 
@@ -486,6 +488,13 @@ header .header__container .navigation .nav__menu.nav__block > li a {
 }
 
 @media (min-width: 768px) {
+  .pricing__header {
+    font-size: 1.5em;
+  }
+  .pricing__description {
+    font-size: 1.3em;
+    padding: 50px 0;
+  }
   .pricing__container {
     display: grid;
     grid-template-columns: repeat(3, 350px);
@@ -533,6 +542,67 @@ header .header__container .navigation .nav__menu.nav__block > li a {
 .pricingplan__info li:nth-child(1) {
   font-size: 0.8rem;
   padding-bottom: 20px;
+}
+
+.team__header {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 20px 0 20px 0;
+  color: rgb(70, 70, 70);
+}
+
+.team__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: repeat(3, 250px);
+  grid-auto-flow: row;
+}
+
+.team__container .team__person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.team__container .team__person .type {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.team__container .team__person .price {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.team__container .team__person .sub-price {
+  font-size: 0.8em;
+}
+
+.team__container .team__person .feature__description {
+  font-weight: bold;
+  text-align: center;
+}
+
+.team__container .team__person .feature__text {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .team__header {
+    font-size: 1.5em;
+  }
+  .team__container {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: 80%;
+    grid-auto-flow: row;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,71 @@
+@import '../abstracts/';
+
+.team__header {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+  
+ 
+    color: $color-dark-grey
+}
+
+.team__container {
+    @include flexAbsoluteCenter;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(3, 250px);
+    grid-auto-flow: row;
+
+    .team__person {
+        @include flexAbsoluteCenter;
+        flex-direction: column;
+        padding: 0 50px;
+
+      
+
+        .type {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .sub-price {
+            font-size: 0.8em;
+        }
+
+        .info {
+
+        }
+
+        .feature__description {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .feature__text {
+            text-align: center;
+        }
+    }
+}
+@media(min-width: 768px) {
+    .team__header {
+  
+        font-size: 1.5em;
+        
+    }
+    
+        .team__container {
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            grid-template-rows: 80%;
+            grid-auto-flow: row;
+
+
+
+        }
+    }

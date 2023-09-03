@@ -58,6 +58,7 @@ module.exports = {
           name: 'images/[name].[ext]'
         }
       },
+      
     ],
   },
   resolve: {
