@@ -3,7 +3,6 @@
 .adverb {
     @include flexAbsoluteCenter;
     flex-direction: column;
-    padding: 0 60px;
 
     .adverb__text {
         .adverb__text-header {

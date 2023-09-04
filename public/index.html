@@ -39,8 +39,8 @@
             </div>
         </div>
     </header>
-    <main class=""> 
-        <section class="features">
+    <main> 
+        <section class="features" id="features">
             <h2 class="features__header container">FEATURES</h2>
                <div class="features__container container"></div>
          
@@ -55,16 +55,16 @@
                 <img src="../images/imac.png" alt="monitor">
             </div>
             <div class="adverb__text">
-                <h2 class="adverb__text-header">SIMPLE AND BEAUTIFUL</h2>
+                <h3 class="adverb__text-header">SIMPLE AND BEAUTIFUL</h3>
                 <p class="adverb__text-description">Use Nova theme for your next web project. It 
                     is completely customizable so you can change any of the sections to fit your needs.
                     Nova Theme is free for any kind of use, personal and commercial. Have fun and good luck!
                 </p>
             </div>
         </section>
-        <section class="prices">
-                <h3 class="pricing__header">CHOOSE YOUR PRICING PLAN</h3>
-                <p class="pricing__description">Pick any of our super affordable pricing plans</p>
+        <section class="pricing" id="pricing">
+                <h3 class="pricing__header container">CHOOSE YOUR PRICING PLAN</h3>
+                <p class="pricing__description container">Pick any of our super affordable pricing plans</p>
         <div class="pricing__container container">
              
                 <!-- <div class="pricing__element">
@@ -106,8 +106,19 @@
             </div>
         </section>
         
-        <section class="team">
-            <h3 class="team__title container">THE TEAM</h3>
+        <section class="team" id="team">
+            <h3 class="team__header container">THE TEAM</h3>
+            <div class="team__sub-header">
+                   <label for="select__newmember">ADD NEW MEMBER OF TEAM</label>
+
+<select name="select__newmember" id="select__member">
+<option value="">--Please choose an option--</option>
+  <option value="addYou">Add Yourself</option>
+  <option value="generateMember">Generate Random Member</option>
+  
+</select>
+            </div>
+         
             <div class="team__container container">
                 <!-- <div class="team__person">
                     <img class="team__photo" src="./images/cto.png" alt="cto">
@@ -140,6 +151,7 @@
                     </div>
                 </div> -->
             </div>
+            <div></div>
         </section>
     </main>
         <footer class="footer">
@@ -147,6 +159,6 @@
             <img class="footer__photo" src="./images/webscope.svg" alt="webscope">
         </footer>
      
-      <script src="./index.js"></script>
+      <script src="./index.js" type="module"></script>
 <script src="bundle.js"></script></body>
 </html>

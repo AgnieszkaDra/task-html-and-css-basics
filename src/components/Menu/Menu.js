@@ -25,9 +25,9 @@ export const Menu = (props) => {
      
       {/* <button onClick={handleToggle} className={classes.hamburger__btn}><GiHamburgerMenu/></button>     */}
         <ul className={`${'nav__menu'} ${open ? `${'nav__block'}` : `${'nav__hide'}`}`}>
-            <li><a href="/" className={'nav__link'}>The team</a></li>
-            <li><a href="/" className={'nav__link'}>Pricing</a></li>
-            <li><a href="/" className={'nav__link'}>Features</a></li>
+            <li><a href="#features" className={'nav__link'}>The team</a></li>
+            <li><a href="#pricing" className={'nav__link'}>Pricing</a></li>
+            <li><a href="#features" className={'nav__link'}>Features</a></li>
         </ul>
     </nav>
   )

@@ -33,10 +33,13 @@ export const Prices = (props) => {
     return (
 
       <div className={'pricing__element'}>
-        <div className={'type'}>{item.type}</div>
+        <div className={'pricing__element-info'}>
+           <div className={'type'}>{item.type}</div>
         <div className={'price'}>{'$' + item.price}</div>
         <span className={'sub-price'}>per month</span>
-        <div className={'info'}>{renderInfo(item.info)}</div>
+        <div className={'benefits'}>{renderInfo(item.info)}</div> 
+        </div>
+      
         <button>GET STARTED</button>
       </div>
 

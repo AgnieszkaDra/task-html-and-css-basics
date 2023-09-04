@@ -22,9 +22,9 @@ export const AddYourself = (props) => {
          <div className={'team__person you'}>
             <div className={'team__photo'}><input type="file" id="fileInput" accept="image/*"></input>
             <img id="image" /></div>
-        <div className={'team__function'}>{item.function}</div>
-        <div className={'team__data'}>{item.data}</div>
-        <div className={'team__text'}>{item.description}</div>
+        <div className={'team__function'}><input type="text" id="textInput" placeholder={'Please write your function'}></input></div>
+        <div className={'team__data'}><input type="text" id="textInput" placeholder={'Please write your name'}></input></div>
+       
         <div className={'team__icons'}>
             <img className={'team__icon-twitter'} src="./images/team-twitter.svg" alt="team-twitter"></img>
             <img class={'team__icon-fb'} src="./images/team-facebook.svg" alt="team-facebook"></img>
