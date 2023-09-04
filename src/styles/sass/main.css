@@ -673,7 +673,7 @@ header .header__container .navigation .nav__menu.nav__block > li a {
 .footer {
   width: 100%;
   color: rgb(255, 255, 255);
-  background-color: grey;
+  background-color: rgb(70, 70, 70);
   display: flex;
   justify-content: center;
   align-items: center;
