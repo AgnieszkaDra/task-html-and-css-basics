@@ -1,13 +1,9 @@
 import React from 'react'
-import AddYourself from './AddYourself'
-import data from '../../../data'
 
 import PropTypes from 'prop-types'
 
 
-
-
-export const Team = (props) => {
+export const AddYourself = (props) => {
 
   const {
     className,
@@ -16,18 +12,16 @@ export const Team = (props) => {
   } = props
 
  
+ 
 
   const renderListItem = (item, i) => {
 
     return (
 
          <>
-      
-         <div className={'team__person'}>
-          <div className={'team__photo'}>
-             <img  src={item.photo} alt="cto"></img>
-          </div>
-           
+         <div className={'team__person you'}>
+            <div className={'team__photo'}><input type="file" id="fileInput" accept="image/*"></input>
+            <img id="image" /></div>
         <div className={'team__function'}>{item.function}</div>
         <div className={'team__data'}>{item.data}</div>
         <div className={'team__text'}>{item.description}</div>
@@ -48,17 +42,16 @@ export const Team = (props) => {
     <>
    
 
-    {team.list.map((item, i) => {
+    {team.addYou.map((item, i) => {
       return renderListItem(item, i)
     })}
-       <AddYourself {...data}></AddYourself>
 
   </>
   )
 }
 
-Team.propTypes = {
+AddYourself.propTypes = {
   className: PropTypes.string
 }
 
-export default Team
+export default AddYourself

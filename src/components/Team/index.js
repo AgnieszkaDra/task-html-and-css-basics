@@ -1,2 +1,3 @@
 export * from './Team'
-export { default } from './Team'
+export * from './AddYourself'
+export { default } from './AddYourself'

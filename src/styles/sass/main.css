@@ -552,6 +552,24 @@ header .header__container .navigation .nav__menu.nav__block > li a {
   color: rgb(70, 70, 70);
 }
 
+.team__sub-header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team__sub-header label {
+  font-size: 0.7em;
+  padding-bottom: 10px;
+}
+
+.team__sub-header select {
+  font-size: 0.5rem;
+  padding: 2px 5px;
+}
+
 .team__container {
   display: flex;
   justify-content: center;
@@ -568,6 +586,17 @@ header .header__container .navigation .nav__menu.nav__block > li a {
   align-items: center;
   flex-direction: column;
   padding: 0 50px;
+}
+
+.team__container .team__person .team__photo {
+  width: 80px;
+  height: 80px;
+}
+
+.team__container .team__person .team__photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .team__container .team__person .type {
@@ -593,9 +622,19 @@ header .header__container .navigation .nav__menu.nav__block > li a {
   text-align: center;
 }
 
+.team__container .team__person.you {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .team__header {
     font-size: 1.5em;
+  }
+  .team__sub-header {
+    text-align: center;
+  }
+  .team__sub-header label {
+    font-size: 1em;
   }
   .team__container {
     display: grid;

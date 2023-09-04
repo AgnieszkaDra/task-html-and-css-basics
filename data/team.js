@@ -31,8 +31,22 @@ export const team = {
             './images/team-facebook.svg'
         ]
       },
+    
   
       
+    ],
+    addYou: [
+        {
+        id: "Yourself",
+        photo: "",
+        function: '',
+        data: '',
+        description: '',
+        icons: [
+            './images/team-twitter.svg',
+            './images/team-facebook.svg'
+        ]
+      },
     ]
   }
   

@@ -8,8 +8,10 @@ import { Features } from './components/Features';
 import { Prices } from './components/Prices';
 
 import { Team } from './components/Team';
+import AddYourself from './components/Team';
 
 import { toggleHamburger } from './js/toggleHamburger';
+import { selectMember } from './js/inputSelect';
 
 const team = document.querySelector('.team__container')
 console.log(team)
@@ -18,6 +20,7 @@ ReactDOM.render(<Features {...data}/>, document.querySelector('.features__contai
 ReactDOM.render(<Prices {...data}/>, document.querySelector('.pricing__container'));
 
 ReactDOM.render(<Team {...data}/>, document.querySelector('.team__container'));
+// ReactDOM.render(<AddYourself {...data}/>, document.querySelector('.team__container'));
 
 // const icons = document.querySelectorAll('.hamburger__icon');
 // console.log(icons)
@@ -29,6 +32,11 @@ ReactDOM.render(<Team {...data}/>, document.querySelector('.team__container'));
 const iconsHamburger = document.querySelectorAll('.hamburger__icon');
 toggleHamburger(iconsHamburger)
 
+const selectElement = document.getElementById("select__member");
+selectMember(selectElement)
+
+const you = document.querySelector('.team__person.you')
+console.log(you)
 
 
 
